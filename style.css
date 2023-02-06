@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Righteous', cursive;
+    background-image:url(../imgs/underwater.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    overflow: hidden;
+    width: 1920px;
+}
+
+.header {
+    color: aliceblue;
+    padding: 50px;
+}
+
+nav {
+    position: relative;
+    left: 40px;
+}
+
+
+.header > nav > ul > li {
+    display: inline;
+    font-size: 25px;
+    cursor: pointer;
+    padding: 85px;
+   
+
+}
+
+
+ul > li {
+    list-style: none;
+}
+
+.header > img {
+    position: absolute;
+    top: 450px;
+    left: 920px;
+    cursor: pointer;
+}
+
+.splash {
+    color:aliceblue;
+    transform: translate(500px, 370px);
+}
+
+
+
+.diver {
+    transform: translate(700px, -150px);
+    animation: divermv 3s ease-in-out infinite;
+}
+
+@keyframes divermv {
+   0% {transform: translate(700px, -150px);}
+   100% {transform: translate(700px, 150px);}
+}
+
+.fish {
+    transform: translate(1900px, -100px);
+    animation: fishmv 5s ease-in-out infinite;
+}
+
+@keyframes fishmv {
+    0% {transform: translate(1600px, -100px);}
+    100% {transform: translate(-100px, -100px);}
+}
+
+.fish2 {
+    transform: translate(250px, -100px);
+    animation: fishmv2 5s ease-in-out infinite;
+}
+
+@keyframes fishmv2 {
+    0% {transform: translate(-100px, -100px);}
+    100% {transform: translate(1800px, -100px);}
+}
